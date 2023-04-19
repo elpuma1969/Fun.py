@@ -12,7 +12,7 @@ def read_file(file_name):
 
 def connect_to_device(device_ip, device_type, username, password, port=22):
     device = {
-        'device_type': device_type,
+        'device_type': cisco_ios,
         'ip': device_ip,
         'username': username,
         'password': password,
