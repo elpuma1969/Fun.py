@@ -39,7 +39,7 @@ def cp_run():
             # Check the output for the "Are you sure you want to save" prompt
             if 'Destination filename' in output:
                 # Send "y" to confirm the save operation
-                output += connection.send_command_timing("y")
+                output += connection.send_command_timing("")
 
             # Disconnect from the device
             connection.disconnect()
