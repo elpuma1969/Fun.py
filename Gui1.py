@@ -36,7 +36,7 @@ def run_script(device_list, output_dir):
             month = now.month
             day = now.day
 
-            filename = os.path.join(output_dir, f"{hostname}_{year}-{month}-{day}_SEPT19.txt")
+            filename = os.path.join(output_dir, f"{hostname}_{year}-{month}-{day}_DATA.txt")
 
             with open(filename, "w") as final:
                 final.write(output)
@@ -83,7 +83,7 @@ root = tk.Tk()
 root.title("Cisco Backup Tool")
 
 # Create and arrange widgets
-device_list_label = tk.Label(root, text="Device List File:")
+device_list_label = tk.Label(root, text="Device List File:", width='50', height='25')
 device_list_label.pack()
 
 device_list_entry = tk.Entry(root)
