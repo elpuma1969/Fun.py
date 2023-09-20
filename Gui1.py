@@ -52,13 +52,13 @@ def run_script(device_list, output_dir):
 
 
 def browse_file():
-    file_path = filedialog.askopenfilename(title="EVERYONE_CISCO_BACKUP.txt")
+    file_path = filedialog.askopenfilename(title="Select Device List File")
     device_list_entry.delete(0, tk.END)
     device_list_entry.insert(0, file_path)
 
 
 def browse_output_dir():
-    output_dir = filedialog.askdirectory(title="BACKUP_SCH")
+    output_dir = filedialog.askdirectory(title="Select Output Directory")
     output_dir_entry.delete(0, tk.END)
     output_dir_entry.insert(0, output_dir)
 
